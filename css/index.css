@@ -1,11 +1,13 @@
 h1{
 	font-size: 100px;
 }
-<<<<<<< HEAD
-=======
+
+.section{
+	padding-top: 70px;
+}}
 
 #screenshotPhoto{
 	width: 100%;
 	height: 100%;
 }
->>>>>>> e5d1d9dbd96a57e7c2d23c47b8799f3023a4acfa
+
