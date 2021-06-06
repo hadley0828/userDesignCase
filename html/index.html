@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Apron</title>
-        
-        <link rel="stylesheet" href="../css/bootstrap.css">
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- our css -->
         <link rel="stylesheet" type="text/css" href="../css/index.css">
-        <script type="text/javascript" href="../js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" href="../js/bootstrap.js"></script>
-    <!--    make it friendly to mobile devices-->
+        <!-- script for bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!--    make it friendly to mobile devices-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -17,18 +18,30 @@
                 <a class="navbar-brand" href="#">
                     <img src="../images/logo.png" alt="" width="90" height="40">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#overview">Overview</a>
-                        <a class="nav-link" href="#existing">Existing Products</a>
-                        <a class="nav-link" href="#users">Target Users</a>
-                        <a class="nav-link" href="#evaluation">Evaluation</a>
-                        <a class="nav-link" href="#final">Final Design</a>
-                        <a class="nav-link" href="#acknowledgments">Acknowledgements</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#existing">Existing Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#users">Target Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#evaluation">Evaluation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#final">Final Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acknowledgments">Acknowledgements</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -291,5 +304,7 @@
         <div class="container section" id="acknowledgments">
             <h2>Acknowledgments</h2>
         </div>
+
+        
     </body>
 </html>
