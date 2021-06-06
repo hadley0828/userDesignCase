@@ -7,10 +7,16 @@ h3{
 
 .section{
 	padding-top: 70px;
-}}
+}
 
 #screenshotPhoto{
 	width: 100%;
 	height: 100%;
 }
-
+.infocard{
+	outline:  2px dashed #94D4D1;
+}
+.final-design-screenshots{
+	height: 80%;
+	width: auto;
+}
