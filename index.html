@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Apron</title>
+        <!-- bootstrap css -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <!-- our css -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <!-- script for bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <!-- Google font Kalam -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--    make it friendly to mobile devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="" width="90" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#existing">Existing Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#users">Target Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#evaluation">Evaluation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#final">Final Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acknowledgments">Acknowledgements</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1>Apron</h1>
+        </div>
+
+        <div class="container section" id="overview">
+            <h2>Overview</h2>
+            <div class="container">
+                <p>Nowadays, the world is experiencing an unprecedented pandemic.
+                    People used to go outside for eating, but now the ways to get
+                    food are much different. However,  it is difficult for many people
+                    to cook food at the same caliber as restaurant cuisine because of
+                    their lack of experience. Our team aims to design a system that
+                    can guide people to be a better cook, and can provide support
+                    for staying-at-home people a way to ease into cooking.</p>
+                <p>“We want to design a system that helps people ease into cooking”</p>
+            </div>
+        </div>
+
+        <div class="container section" id="existing">
+            <h2>Existing Products</h2>
+            <div class="row">
+                <div class="col-lg-4 photo">
+                    <a href="https://www.ubereats.com">
+                        <img src="images/uber_eats_logo.png" alt="Uber Eats logo">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <b>Description:</b> Users order food through a phone app.
+                    <br>
+                    <b>User base:</b> Anyone with a phone looking to acquire food without leaving their doorstep.
+                    <br>
+                    <b>Approach:</b> Don’t teach users how to cook. Instead, make the process of acquiring food painless and easily accessible.
+                </div>
+                <div class="col-lg-4 photo d-none d-lg-block"><img style='height: 100%; width: 100%; object-fit: contain' src="images/uber_eats_screenshot.PNG" alt="the screenshot of Uber Eats"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 photo">
+                    <a href="https://www.youtube.com">
+                        <img src="images/youtube_logo.png" alt="Youtube logo">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <b>Description:</b> Video sharing website. Many users post cooking tutorials and videos that other users can view.
+                    <br>
+                    <b>User base:</b> Anyone looking for cooking tutorials that prefer a video medium.
+                    <br>
+                    <b>Approach:</b> Users search for available cooking tutorials with keywords.
+                </div>
+                <div class="col-lg-4 photo d-none d-lg-block"><img style='height: 100%; width: 100%; object-fit: contain' src="images/youtube_screenshot.PNG" alt="the screenshot of Youtube"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 photo">
+                    <a href="https://www.simplyrecipes.com/">
+                        <img src="images/simply_recipes_logo.png" alt="Simply Recipes logo" style="width:80%;">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <b>Description:</b> Websites that offer massive amounts of recipes.
+                    <br>
+                    <b>User base:</b> People who are looking for recipes online.
+                    <br>
+                    <b>Approach:</b> Users can search from a bank of recipes. These systems also have a rating system for users to gauge trustworthiness</div>
+                <div class="col-lg-4 photo d-none d-lg-block"><img style='height: 100%; width: 100%; object-fit: contain' src="images/simply_recipes_screenshot.PNG" alt="the screenshot of Recipe Websites"></div>
+            </div>
+        </div>
+
+        <div class="container section" id="users">
+            <h2>Target Users</h2>
+            <div class="row gy-5">
+                <div class="col-12">
+                    <p>
+                        To investigate our user base, we conducted interviews with people that fit our target audience: anyone interested in cooking and is able to perform basic cooking tasks. Throughout the interview, we aimed to answer several research questions, encompassing ideas like why people want to learn to cook, how they learn to cook, and what keeps them from cooking. With that information, we identified key goals that our interviewees have in regards to cooking, some of which include having convenient meals and eating healthy, as well as common obstacles like laziness and lack of time. We then constructed 3 personas to illustrate the goals and behaviors of our users to assist us in making design decisions in the future.
+                    </p>
+                </div>
+
+                <div class="col-12">
+                    <div class="row d-flex">
+                        <div class="col-12 col-lg-7 order-last order-lg-first">
+                            <img src="images/lucas_persona.png" class="img-fluid" alt="Primary Persona">
+                        </div>
+                        <div class="col-12 col-lg-5 order-first order-lg-last">
+                            <h3>Lucas (Primary Persona)</h3>
+                            <p>
+                                He represents the main users of our system: people who are new to living on their own. These people often have full-time work or are full-time university students, so they do not have much time for preparing food. As well, because they are new in living apart from family, they are not very experienced in cooking and want to grow. What’s more, they usually value health in food, which makes them look for a more healthy and more convenient way for cooking. The core goal of our system is to help these types of people ease into cooking.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <h3>James (Secondary Persona)</h3>
+                            <p>
+                                He represents those who have no imminent need to cook for themselves, yet view it as a fun hobby are also important to our system. Most of these people are new to cooking, but are willing to give it a try. Our system should be able to provide them with some recipes and guidance to help them how to cook these recipes. 
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <img src="images/james_persona.png" class="img-fluid" alt="Secondary Persona">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row d-flex">
+                        <div class="col-12 col-lg-7 order-last order-lg-first">
+                            <img src="images/karen_persona.png" class="img-fluid" alt="Tertiary Persona">
+                        </div>
+                        <div class="col-12 col-lg-5 order-first order-lg-last">
+                            <h3>Karen (Tertiary Persona)</h3>
+                            <p>
+                                Last but not least, she represents people who are not the main users of our systems, but still would benefit from our system. Particularly, as an experienced cook, she signifies those who have been cooking for a long time and are looking for more new recipes and ways to learn advanced techniques. They are interested in a platform that would provide them with a fresh way to broaden their repertoire and make their loved ones happy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section" id="evaluation">
+            <h2>Evaluation</h2>
+            <h3>
+                Section 1: User Evaluation
+            </h3>
+            <h4>
+                Methods
+            </h4>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    For the user evaluation, the three team members each interviewed two potential users for a total of six user evaluation interviews. These interviews were conducted with a guildeline in mind, constructed by the team members prior. After we individually collected the interview results, we then used Miro, a virtual whiteboard, to collect and organize the notes obtained from said interviews. We then constructed a table listing the issues found ordered by priority, and updated our existing wireframe accordingly.
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card infocard d-none d-lg-block">
+                        <img src="images/user_eval_guidelines.JPG" class="card-img-top" alt="User evaluation guidelines">
+                        <i class="card-text">
+                            The user evaluation guideline the team followed. Includes a list of questions and tasks the participants were encouraged to answer and complete.
+                        </i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card infocard d-none d-lg-block">
+                        <img src="images/user_eval_miro.JPG" class="card-img-top" alt="User evaluation whiteboarding">
+                        <i class="card-text">
+                            The whiteboard activity conducted in Miro. The yellow, orange, and green sticky notes were the individual notes found in the interviews. The purple sticky notes represent a issue that a group of individual sticky notes highlight.
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h4>
+                Findings
+            </h4>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    In total, the team formulated 13 key issues from the user evaluations. Most of the concerns stemmed from ambiguous wording and interactables in the system, which the team prioritized in reflecting in the wireframe. For example, the "Tutorials" tab was renamed to "Skills" due to the confusions stemming from the terminology. Other user confusions involved displaying unneccessary information, such as displaying active filters and allowing insignificant filters, therefore cluttering the filter window.
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card infocard d-none d-lg-block">
+                        <img src="images/user_eval_result1.JPG" class="card-img-top" alt="First user evaluation result">
+                        <i class="card-text">
+                            One example of a significant change based on user evaluations. We previously implemented a numeric scale of difficulty. However, based on user feedback, we overhauled the numeric scale for a four-tier system, which seems to be more intutivie for users.
+                        </i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card infocard d-none d-lg-block">
+                        <img src="images/user_eval_result2.JPG" class="card-img-top" alt="Second user evaluation result">
+                        <i class="card-text">
+                            Another example of significant changed based on user evaluations. We originally had an approximate pricing for individual ingredients. After user feedback, we decided to display an approximate total cost instead.
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h3>
+                Section 2: Heuristic Evaluation
+            </h3>
+            <h4>
+                Methods
+            </h4>
+            <div class="col-12">
+                For the heuristic evaluation, we individually evaluated the high-fidelity version of Apron we constructed prior. This process involved focusing on focusing on one of Hielsen's 10 Heuristics, uncovering components of the system that seemingly violate the heuristic, documenting it, and repeating for all ten heuristics. Then, similar to the user evaluations, the group collected the usability issues on Miro, and constructed a table listing the issues found ordered by priority, and updated our high fidelity mockup accordingly.
+            </div>
+            <br>
+            <h4>
+                Findings
+            </h4>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    Surprisingly, many of the issues found from the individual heuristic evaluation did not match the others. There were about 60 usability issues found through this exercise. However, due to limitations of Figma, the platform this high fidelity mockup was constructed on, some of these usability issues were unreasonable to resolve. In total, the team formulated 19 key issues from the heuristic evaluation that were reflected in the final high fidelity mockup.
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card infocard d-none d-lg-block">
+                        <img src="images/heur_eval_result1.JPG" class="card-img-top" alt="First user evaluation result">
+                        <i class="card-text">
+                            One example of a significant change based on heuristic evaluations. We previously ommitted price and calories, while displaying the difficulty and time limit of recipes. This design was inherently inconsistent, so we included the price and calorie count in the recipe entry.
+                        </i>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="card infocard d-none d-lg-block">
+                        <img src="images/heur_eval_result2.JPG" class="card-img-top" alt="Second user evaluation result">
+                        <i class="card-text">
+                            Another example of significant changed based on heuristic evaluations. There were previously no feedback to the user when they would add recipes to their favorites. With this new popup, the user receives visual feedback for their action of adding to favorites.
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container section" id="final">
+            <h2>Final Design</h2>
+            <br>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                    <h3>
+                        Home Page
+                    </h3>
+                    The home page of Apron. The top and recommended recipes are tailored towards the user's difficulty and style preferences. Additionally, for the trend chasers out there, hottest recipes will appear under the trending recipes.
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/home.png" class=" rounded mx-auto d-block final-design-screenshots" alt="The home screen">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                    <h3>
+                        Search Page
+                    </h3>
+                    The search tab of Apron. The user is met with a longer list of recommended recipes when they first navigate to this tab. Each recipe entry features a thumbnail, short description, calories, price, time, and difficulty of the recipe.
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/search.png" class="rounded mx-auto d-block final-design-screenshots" alt="The search screen">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                    <h3>
+                        Filters
+                    </h3>
+                    The filters available in Apron. Users are able to filter recipes by difficulty, time limit, calories, and total cost. There is also a "Show only unread recipes" toggle for our adventurous users.
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/filter.png" class="rounded mx-auto d-block final-design-screenshots" alt="The filters screen">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                    <h3>
+                        Recipe Details
+                    </h3>
+                    The recipe details. In every recipe, there will be a big picture of the dish at the top, followed by calories, time, serving size, and cost. Further below are the ingredients and instructions. Users can submit feedback through the comment system at the bottom of the page.
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/recipedetails.png" class="rounded mx-auto d-block final-design-screenshots" alt="The recipe details">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+                    <h3>
+                        Skills
+                    </h3>
+                    The skills tab. This tab features a library of techniques that beginner cooks may not know, such as how to preheat and oven or how to use a pressure cooker. 
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/skills.png" class="rounded mx-auto d-block final-design-screenshots" alt="The skills tab">
+                </div>
+            </div>
+        </div>
+
+        <div class="container section" id="acknowledgments">
+            <h2>Acknowledgments</h2>
+        </div>
+
+    </body>
+</html>
