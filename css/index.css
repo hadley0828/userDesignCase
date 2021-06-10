@@ -1,32 +1,44 @@
+body{
+	padding-bottom: 40px;
+}
+
 h1{
 	font-family: 'Kalam', cursive;
 	font-size: 100px;
 }
+
 h2{
 	font-family: 'Kalam', cursive;
 	font-size:  50px;
 }
+
 h3{
 	color: #00A69E;
 }
+
 h4{
 	font-family: 'Kalam', cursive;
 }
+
 .section{
 	padding-top: 70px;
 }
+
 #apron_quote{
 	font-family: 'Kalam', cursive;
 	font-size: 24px
 }
+
 .screenshotPhoto{
-	height: 60%;
+	height: 100%;
 	width: 100%;
 	object-fit: contain;
 }
+
 .infocard{
 	outline:  2px dashed #94D4D1;
 }
+
 .final-design-screenshots{
 	height: 80%;
 	width: auto;
